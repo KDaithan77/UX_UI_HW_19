@@ -123,7 +123,6 @@ section .title::after {
 .navbar .menu li {
   list-style: none;
   display: inline-block;
-
 }
 
 .navbar .menu li a {
@@ -198,7 +197,7 @@ section .title::after {
 
 .home {
   display: flex;
-  background: url("images/banner.jpg") no-repeat center;
+  background: url("/images/banner.png") no-repeat center;
   height: 100vh;
   color: white;
   min-height: 500px;
@@ -663,12 +662,14 @@ section .title::after {
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: rgb(187, 187, 187);
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(187, 187, 187);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
- color: rgb(187, 187, 187);
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(187, 187, 187);
 }
 
 /* footer section styling */
