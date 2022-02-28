@@ -110,7 +110,7 @@ section .title::after {
 }
 
 .navbar.sticky {
-  padding: 15px 0;
+  padding: 5px 0;
   background: crimson;
 }
 
@@ -128,9 +128,9 @@ section .title::after {
 .navbar .menu li a {
   display: block;
   color: rgb(0, 0, 0);
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 45px;
   transition: color 0.3s ease;
 }
 
@@ -217,11 +217,11 @@ section .title::after {
 }
 
 .home .home-content .text-1 {
-  font-size: 34px;
+  font-size: 28px;
 }
 
 .home .home-content .text-2 {
-  font-size: 75px;
+  font-size: 65px;
   font-weight: 600;
   margin-left: -3px;
 }
@@ -237,7 +237,7 @@ section .title::after {
 }
 
 .home .home-content .text-4 {
-  font-size: 34px;
+  font-size: 28px;
 }
 
 .home .home-content a {
@@ -766,6 +766,7 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
+
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
@@ -804,7 +805,7 @@ footer span a:hover {
   }
   .about .about-content .right .text,
   .skills .skills-content .left .text {
-    font-size: 19px;
+    font-size: 17px;
   }
   .contact .right form .fields {
     flex-direction: column;
