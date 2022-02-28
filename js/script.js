@@ -56,6 +56,7 @@ $(document).ready(function () {
       "Multi-Faceted",
       "Always Learning",
       "Curious",
+      "Irreverent",
       "an Ideas Man",
       "Available For Your Next Project",
     ],

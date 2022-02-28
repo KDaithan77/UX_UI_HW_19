@@ -390,7 +390,9 @@ section .title::after {
 }
 
 .skills .skills-content .left a {
-  display: inline-block;
+  /*display: inline-block;*/
+  /*hiding button until next iteration*/
+  display: none;
   background: crimson;
   color: white;
   font-size: 18px;
@@ -444,15 +446,19 @@ section .title::after {
 }
 
 .skills-content .right .css::before {
-  width: 60%;
+  width: 67%;
 }
 
 .skills-content .right .js::before {
-  width: 50%;
+  width: 65%;
+}
+
+.skills-content .right .jq::before {
+  width: 75%;
 }
 
 .skills-content .right .bs::before {
-  width: 60%;
+  width: 70%;
 }
 
 .skills-content .right .acs::before {
@@ -460,7 +466,7 @@ section .title::after {
 }
 
 .skills-content .right .cw::before {
-  width: 90%;
+  width: 93%;
 }
 
 /* Projects section styling */
