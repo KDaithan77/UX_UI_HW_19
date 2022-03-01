@@ -98,7 +98,7 @@ section .title::after {
   background: none;
   width: 100%;
   z-index: 999;
-  padding: 0;
+  padding: 10px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
@@ -109,11 +109,6 @@ section .title::after {
   padding: 10px 0;
   position: relative;
   left: 2%;
-}
-
-.navbar .headline {
-  font-family: "Work Sans", sans-serif;
-  font-size: 0.8em;
 }
 
 .navbar.sticky {
@@ -134,7 +129,7 @@ section .title::after {
 
 .navbar .menu li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: #000;
   font-size: 20px;
   font-weight: 500;
   margin-left: 45px;
@@ -145,20 +140,21 @@ section .title::after {
   color: crimson;
 }
 
-.navbar.sticky li a {
-  color: rgb(255, 255, 255);
+.navbar.sticky .menu li a {
+  color: white;
 }
 
 .navbar.sticky .menu li a:hover {
-  color: crimson;
+  color: black;
 }
 
 .navbar.sticky .logo {
   filter: brightness(0) invert(1);
 }
 
-.navbar.sticky .menu-btn {
-  filter: brightness(0) invert(1);
+.navbar .headline {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.8em;
 }
 
 /* menu btn styling */
@@ -703,19 +699,14 @@ footer span a:hover {
     height: 350px;
     width: 350px;
   }
-
-  .max-width {
-    padding: 0 25px;
-  }
-
 }
 
-/*@media (max-width: 991px) {
+@media (max-width: 991px) {
   .max-width {
     padding: 0 25px;
   }
 }
-*/
+
 
 @media (max-width: 947px) {
   .menu-btn {
@@ -727,6 +718,10 @@ footer span a:hover {
     content: "\f00d";
   }
 
+ /* .navbar.sticky .menu-btn {
+    color: white;
+  }
+ */
   .navbar .menu {
     position: fixed;
     height: 100vh;
@@ -753,6 +748,11 @@ footer span a:hover {
     margin: 20px 0;
     font-size: 25px;
   }
+
+  /*.navbar .menu li a:hover {
+    color: crimson !important;
+  }
+  */
 
   .home .home-content .text-2 {
     font-size: 70px;
