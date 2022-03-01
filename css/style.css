@@ -703,10 +703,9 @@ footer span a:hover {
 
 @media (max-width: 991px) {
   .max-width {
-    padding: 0 25px;
+    padding: 0 50px;
   }
 }
-
 
 @media (max-width: 947px) {
   .menu-btn {
@@ -718,10 +717,9 @@ footer span a:hover {
     content: "\f00d";
   }
 
- /* .navbar.sticky .menu-btn {
+  .navbar.sticky .menu-btn {
     color: white;
   }
- */
   .navbar .menu {
     position: fixed;
     height: 100vh;
