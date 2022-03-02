@@ -102,24 +102,23 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
+.navbar.sticky {
+  padding: 5px 0;
+  background: crimson;
+}
+.navbar .max-width {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .navbar .logo {
   display: block;
   text-align: center;
   padding: 10px 0;
   position: relative;
-  left: 2%;
-}
-
-.navbar.sticky {
-  padding: 10px 0;
-  background: crimson;
-}
-
-.navbar .max-width {
-  margin-right: 20px;
-  align-items: center;
-  justify-content: space-between;
+  left: 4%;
 }
 
 .navbar .menu li {
@@ -132,7 +131,7 @@ section .title::after {
   color: #000;
   font-size: 20px;
   font-weight: 500;
-  margin-left: 45px;
+  margin-left: 25px;
   transition: color 0.3s ease;
 }
 
@@ -145,7 +144,7 @@ section .title::after {
 }
 
 .navbar.sticky .menu li a:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .navbar.sticky .logo {
@@ -164,6 +163,10 @@ section .title::after {
   font-size: 33px;
   cursor: pointer;
   display: none;
+}
+
+.navbar.sticky .menu-btn {
+  color: white;
 }
 
 .scroll-up-btn {
@@ -713,13 +716,10 @@ footer span a:hover {
     z-index: 999;
   }
 
-  .menu-btn i.active:before {
+  .menu-btn i.active::before {
     content: "\f00d";
   }
 
-  .navbar.sticky .menu-btn {
-    color: white;
-  }
   .navbar .menu {
     position: fixed;
     height: 100vh;
@@ -735,7 +735,7 @@ footer span a:hover {
   .navbar .menu.active {
     left: 0;
   }
-
+ 
   .navbar .menu li {
     display: block;
   }
@@ -747,11 +747,10 @@ footer span a:hover {
     font-size: 25px;
   }
 
-  /*.navbar .menu li a:hover {
+  .navbar .menu li a:hover {
     color: crimson !important;
   }
-  */
-
+  
   .home .home-content .text-2 {
     font-size: 70px;
   }
